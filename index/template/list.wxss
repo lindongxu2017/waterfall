@@ -1,0 +1,23 @@
+/* template/list/list.wxss */
+.img-group {
+  position: relative;
+}
+.img-wrapper {
+  position: absolute;
+  font-size: 0;
+}
+.img-wrapper image {
+  width: 100%;
+  height: auto;
+  border-radius: 10rpx;
+  margin-bottom: 5px;
+}
+.img-wrapper .desc {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1;
+  height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

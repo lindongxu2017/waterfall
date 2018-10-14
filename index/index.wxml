@@ -1,0 +1,7 @@
+
+<!-- 列表 -->
+<list wx:for="{{list}}" d-value="{{dValue}}" list-data="{{item}}" bind:heightlog="heightlog"></list>
+<!-- loading -->
+<view style='height: 200rpx; text-align: center; line-height: 1; padding: 86rpx 0; font-size: 28rpx; color: #999;'>
+  <text hidden='{{!isLoading}}'>正在加载...</text>
+</view>

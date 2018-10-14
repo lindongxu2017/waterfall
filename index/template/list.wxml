@@ -1,0 +1,10 @@
+<!--template/list/list.wxml-->
+
+<image wx:for="{{images}}" data-index='{{index}}' src="{{item.imgUrl}}" hidden bindload="imgOnload"></image>
+
+<view class="img-group" style='height: {{wrapperHeight}}px'>
+  <view class='img-wrapper' wx:for="{{list}}" wx:key="{{index}}" style="width: calc(50% - {{3*gap/2}}px); top: {{item.top}}px; left: {{item.left}}px">
+    <image mode='widthFix' src="{{item.imgUrl}}" style="height:{{item.showHeight}}px"></image>
+    <view class='desc' wx:if="{{item.desc != ''}}">{{item.desc}}</view>
+  </view>
+</view>
